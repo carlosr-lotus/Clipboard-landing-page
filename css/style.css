@@ -1,0 +1,382 @@
+/* ***** 
+    Global 
+***** */
+:root {
+    /* Colors */
+    /* Primary */
+    --Strong-Cyan: hsl(171, 66%, 44%);
+    --Light-Blue: hsl(233, 100%, 69%);
+
+    /* Neutral */
+    --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+    --Grayish-Blue: hsl(201, 11%, 66%);
+
+    /* Typography */
+    font-size: 62.5%;
+}
+
+*,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Bai Jamjuree',
+        sans-serif;
+    font-size: 1.8rem;
+
+    line-height: 3.2rem;
+
+}
+
+button {
+    font-family: 'Bai Jamjuree',
+        sans-serif;
+    font-size: 1.8rem;
+}
+
+/* Main Content Container */
+.container {
+    /* max-width: ; */
+    width: 100%;
+
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ***** Page Style ***** */
+
+.container h2,
+p {
+    padding: 0 1.5rem 1.5rem;
+}
+
+.container p {
+    color: var(--Grayish-Blue);
+}
+
+.container h2,
+h3 {
+    color: var(--Dark-Grayish-Blue);
+
+    margin: 1.2rem 1.2rem 0;
+}
+
+.header-container {
+    width: 100%;
+
+    background-image: url(../images/bg-header-mobile.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 6.5rem;
+}
+
+.logo-top {
+    width: 11.5rem;
+}
+
+/* All Page Buttons */
+.buttons-container {
+    width: 75%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin-bottom: 7.5rem;
+}
+
+.buttons-container button {
+    width: 100%;
+    margin: 1rem 0;
+    padding: 1.4rem;
+
+    border: none;
+    border-radius: 2.5rem;
+
+    color: #fff;
+
+    cursor: pointer;
+
+    transition: 0.5s;
+}
+
+.buttons-container button:hover {
+    transform: scale(1.1);
+}
+
+.iOS-button {
+    background-color: var(--Strong-Cyan);
+    margin-bottom: 1.2rem;
+
+    -webkit-box-shadow: 0px 10px 13px -7px #000000,
+        5px 5px 15px 5px var(--Strong-Cyan);
+    box-shadow: 0px 10px 13px -7px #000000,
+        5px 5px 15px 0px var(--Strong-Cyan);
+}
+
+.mac-button {
+    background-color: var(--Light-Blue);
+
+    -webkit-box-shadow: 0px 10px 13px -7px #000000,
+        5px 5px 15px 3px var(--Light-Blue);
+    box-shadow: 0px 10px 13px -7px #000000,
+        5px 5px 15px 0px var(--Light-Blue);
+}
+
+/* Container 2 - Keep Track Container */
+.keep-track-container {
+    margin: 0 0 5rem;
+}
+
+/* Container 3 - Features Container */
+.features-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.features-container img {
+    width: 85%;
+    margin: 1.8rem 0;
+}
+
+
+/* Container 4 - Access Clipboard Container */
+.access-clipboard-container {
+    margin: 7.5rem 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.access-clipboard-container img {
+    margin-top: 1.2rem;
+    width: 85%;
+}
+
+/* Container 5 - Tools Container */
+.tools {
+    margin-top: 4.8rem;
+}
+
+/* Container 6 - Partners */
+.partners {
+    height: 500px;
+    margin: 4.8rem 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.last-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* **** Footer ***** */
+footer {
+    background-color: rgb(240, 240, 240);
+
+    width: 100%;
+    height: 360px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer a {
+    text-decoration: none;
+
+    color: var(--Dark-Grayish-Blue);
+}
+
+footer .logo-bottom {
+    width: 10%;
+    margin: 1.2rem 0;
+}
+
+footer .social-media {
+    margin: 1.8rem 0;
+    width: 40%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+footer a:hover,
+.social-media a:hover {
+    filter: invert(57%) sepia(30%) saturate(898%) hue-rotate(122deg) brightness(99%) contrast(96%);
+}
+
+/* ***** Desktop Responsive CSS ***** */
+@media (min-width: 1281px) {
+
+    .container {
+        max-width: none;
+        width: 100%;
+
+    }
+
+    .header-container {
+        width: 100%;
+
+        background-image: url(../images/bg-header-desktop.png);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover;
+    }
+
+    .logo-top {
+        margin: 5rem 0;
+    }
+
+    /* All Page Buttons */
+
+    .buttons-container {
+        width: 440px;
+
+        flex-direction: row;
+        justify-content: center;
+
+        margin: 2.1rem 0 7.5rem;
+    }
+
+    .buttons-container button {
+        margin: 0 1rem;
+    }
+
+    /* Container 3 - Features Container */
+    .features-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .features-container img {
+        width: 35%;
+    }
+
+    .features {
+        text-align: left;
+    }
+
+    .features h3 {
+        margin: 1.4rem 0 0;
+    }
+
+    .last-container {
+        width: 100%;
+    }
+
+    /* Container 4 */
+    .access-clipboard-container img {
+        margin-top: 2.8rem;
+        width: 85%;
+    }
+
+    /* Container 5 */
+
+    .tools-container {
+        width: 70%;
+    }
+
+    .tools {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .blacklist-container {
+        margin-bottom: 1.1rem;
+    }
+
+    .tools h3,
+    p {
+        padding: 0rem;
+        margin: 0;
+    }
+
+    /* Container 6 */
+    .partners {
+        width: 80%;
+        height: 300px;
+        margin: 0;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .partners img {
+        width: 10%;
+    }
+
+    /* Footer */
+    footer {
+        height: 180px;
+        flex-direction: row;
+    }
+
+    footer .logo-bottom {
+        width: 5%;
+    }
+
+    .links {
+        width: 30%;
+
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    footer .social-media {
+        width: 5%;
+    }
+
+}
+
+/* ***** Landscape Mobile ***** */
+@media (min-width: 701px) and (max-width: 1280px) and (orientation: landscape) {
+
+    .container {
+        max-width: none;
+        width: 100%;
+    }
+
+    .features-container {
+        padding: 1.5rem;
+    }
+}
